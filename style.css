@@ -1,0 +1,124 @@
+/* 
+Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0 90px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar_icon {
+  display: none;
+}
+nav > h3 > a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #3a3a3a;
+  font-weight: 700;
+}
+nav a:hover,
+.nav_icons:hover {
+  color: #e02c6d;
+}
+.nav_lists,
+.nav_lists > ul {
+  display: flex;
+  align-items: center;
+}
+.nav_lists > ul > li,
+.nav_icons {
+  list-style: none;
+  padding-left: 34px;
+}
+.nav_links {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+.nav_icons {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+/* Banner Styles */
+.banner {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner_content {
+  width: 55%;
+}
+.banner_content h1 {
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+  margin: 0;
+}
+.banner_content p {
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.banner_image {
+  position: relative;
+  width: 40%;
+}
+.banner_image img {
+  width: 100%;
+  padding-top: 30px;
+}
+.banner_camera {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+}
+.booking_btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.booking_btn i {
+  padding-left: 8px;
+  padding-top: 5px;
+}
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  body {
+    padding: 0 16px;
+  }
+  .bar_icon,
+  #cart_icon {
+    display: block;
+    padding: 0;
+  }
+  .nav_lists ul,
+  .nav_icons {
+    display: none;
+  }
+
+  /* Banner Styles */
+  .banner {
+    flex-direction: column-reverse;
+    padding-top: 60px;
+  }
+  .banner_content,
+  .banner_image {
+    width: 100%;
+  }
+}
